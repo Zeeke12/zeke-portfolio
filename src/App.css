@@ -1,0 +1,12 @@
+.emoji-rain {
+  animation: emojiFall 5s linear infinite;
+}
+
+@keyframes emojiFall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}

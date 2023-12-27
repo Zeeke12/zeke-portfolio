@@ -2,7 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaCode } from "react-icons/fa";
 import Slide from '../../components/Slide';
-
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 const About = () => {
@@ -40,35 +42,24 @@ const About = () => {
   ]
   const skills2 = [
     {
-      title: 'Javascript'
+      title: 'Rust'
     },
     {
-      title: 'HTML'
+      title: 'Java'
     },
     {
-      title: 'CSS'
+      title: 'Figma'
     },
     {
-      title: 'Node JS'
+      title: 'Python'
     },
     {
-      title: 'Mongo DB'
+      title: 'Fast Api'
     },
     {
-      title: 'React'
+      title: 'GraphQL'
     },
-    {
-      title: 'Redux'
-    },
-    {
-      title: 'AWS'
-    },
-    {
-      title: 'Tailwind'
-    },
-    {
-      title: 'Framer'
-    },
+
   ]
 
   const variants = {
@@ -102,7 +93,13 @@ const About = () => {
           </div>
           <div className='relative'>
           <Slide />
-<motion.h1 initial={{ y:5, opacity: 0}} whileInView={{ y: -5,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}}>My Links</motion.h1>
+          <div className='flex flex-row gap-5'>
+            <motion.h1 initial={{ y:5, opacity: 0}} whileInView={{ y: -5,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}} className='text-[#0AFF9D]'>My Links
+            </motion.h1>
+            <FaLongArrowAltRight className='text-[#0AFF9D]' />
+           <IoLogoWhatsapp />
+          <FaGithub />
+  </div>
           </div>
         </div>
         <div className='w-full md:w-2/5 mt-[50px] flex-col flex gap-10'>
@@ -113,18 +110,18 @@ const About = () => {
               </div>
               <div className='flex flex-row flex-wrap relative  gap-2'>
                 <Slide />
-                {skills.map((skill) => <button className='bg-[#232323] rounded-full px-2 py-1'>{skill.title}</button>)}
+                {skills.map((skill, index) => <button key={index} className='bg-[#232323] rounded-full px-2 py-1'>{skill.title}</button>)}
               </div>
             </div>
 
             <div className='flex flex-col gap-5' >
               <div className='relative flex flex-row font-bold gap-3 items-center '>
                 <Slide />
-              <span><FaCode  className='bg-[#0AFF9D]' /></span><motion.h1>Use At Work </motion.h1>
+              <span><FaCode  className='bg-[#0AFF9D]' /></span><motion.h1>Use For Fun</motion.h1>
               </div>
               <div className='relative flex flex-row flex-wrap gap-2'>
                 <Slide />
-                {skills.map((skill) => <button className='bg-[#232323] rounded-full px-2 py-1'>{skill.title}</button>)}
+                {skills2.map((skill, index) => <button key={index} className='bg-[#232323] rounded-full px-2 py-1'>{skill.title}</button>)}
               </div>
             </div>
         </div>

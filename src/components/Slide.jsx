@@ -10,7 +10,7 @@ const Slide = () => {
  };
 
  return (
-  <motion.div  className=' w-full h-full bg-[#0AFF9D] absolute z-40'
+  <motion.div  className=' w-full h-full bg-[#0AFF9D] absolute z-30'
   variants={variants}
   initial="initial"
   whileInView="whileInView"

@@ -20,6 +20,9 @@ const Contact = () => {
         <motion.h1 initial={{ opacity: 0}} whileInView={{ y: -10,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}} className='text-[#0AFF9D] mt-5'>hezekiahajesi111@gmail.com</motion.h1>
 </div>
         </div>
+
+        &copy; Zeke {new Date().getFullYear()}
+
     </div>
   )
 }
