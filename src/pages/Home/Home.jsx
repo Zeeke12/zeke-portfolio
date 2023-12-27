@@ -1,25 +1,15 @@
-import './App.css';
-import Home from './pages/Home/Home';
-import SideBar from './components/SideBar';
-import TopBar from './components/TopBar';
+import React from 'react'
 import { motion } from 'framer-motion'
-import About from './pages/About/About';
-import Projects from './pages/Projects/Projects'
-import Experience from './pages/experience/Experience'
-import Contact from './pages/contact/Contact'
-import Slide from './components/Slide';
-import { TabProvider } from './components/TabContext';
+import About from '../About/About'
+import Projects from '../Projects/Projects'
+import Experience from '../experience/Experience'
+import Contact from '../contact/Contact'
+import Slide from '../../components/Slide'
 
-function App() {
+const Home = () => {
+
   return (
-    <TabProvider>
-    <div className="flex bg-[#111111] w-full ">
-      <div >
-      <SideBar />
-      </div>
-      <div className='flex flex-col w-full'>
-      <TopBar />
-      <div className='px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] flex flex-col gap-10'>
+    <div className='px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] flex flex-col gap-10'>
     <div id='home' className='relative flex flex-col justify-center gap-5 pl-1 h-screen'>
       <div className='relative w-fit'>
     <Slide />
@@ -54,10 +44,8 @@ function App() {
       <div id='contact'>
       <Contact />
       </div>
-    </div>      </div>
     </div>
-    </TabProvider>
-  );
+  )
 }
 
-export default App;
+export default Home
