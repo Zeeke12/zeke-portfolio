@@ -9,7 +9,7 @@ import Slide from '../../components/Slide'
 const Home = () => {
 
   return (
-    <div className='px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] flex flex-col gap-10'>
+    <div className='row-[2_/_span_1] col-span-[2_/_span_3] px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] w-full flex flex-col gap-10'>
     <div id='home' className='relative flex flex-col justify-center gap-5 pl-1 h-screen'>
       <div className='relative w-fit'>
     <Slide />
@@ -44,7 +44,7 @@ const Home = () => {
       <div id='contact'>
       <Contact />
       </div>
-    </div>
+      </div>      
   )
 }
 

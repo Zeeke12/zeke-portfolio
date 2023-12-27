@@ -78,14 +78,14 @@ const About = () => {
  };
   return (
     <div className='text-white '>
-      <div className='flex flex-row items-center relative pl-1'>
+      <div className='flex flex-row items-center  relative pl-1'>
     <div className='relative'>
       <Slide />
       <motion.h1  initial={{ y:5, opacity: 0}} whileInView={{ y: -5,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}} className='text-white font-mono text-5xl font-extrabold z-10'>About<span className='text-[#0AFF9D]'>.</span></motion.h1>
       </div>
       <motion.hr  className='w-full'/>
       </div>
-      <div className='flex flex-col md:flex-row pl-1'>
+      <div className='flex flex-col gap-2 md:flex-row pl-1'>
         <div className='w-full md:w-3/5 flex flex-col gap-5 pt-10 font-extralight'>
           <div className='relative'>
           <Slide />
@@ -105,7 +105,7 @@ const About = () => {
 <motion.h1 initial={{ y:5, opacity: 0}} whileInView={{ y: -5,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}}>My Links</motion.h1>
           </div>
         </div>
-        <div className='w-full md:w-2/5 ml-5 mt-[50px] flex-col flex gap-10'>
+        <div className='w-full md:w-2/5 mt-[50px] flex-col flex gap-10'>
             <div className='flex flex-col gap-5' >
               <div className='relative flex flex-row font-bold gap-3 items-center '>
                 <Slide />

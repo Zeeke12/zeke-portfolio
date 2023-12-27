@@ -39,7 +39,7 @@ const Experience = () => {
       <motion.hr  className='w-full'/>
       </div>
       <div className='flex flex-col gap-5 mt-10'>
-        {experiences.map((experience, index) => (<motion.div key={index} initial={{ y:10, opacity: 0}} whileInView={{ y: 0,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}} className='border-b relative py-5 w-full text-white  flex flex-col gap-3'>
+        {experiences.map((experience, index) => (<motion.div key={index} initial={{ y:10}} whileInView={{ y: 0,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}} className='border-b relative py-5 w-full text-white  flex flex-col gap-3'>
             <div className='flex flex-row justify-between'>
             <div className='relative'>
                 <Slide />
