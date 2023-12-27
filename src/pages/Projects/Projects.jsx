@@ -1,7 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import projectImage1 from '../../assets/hh.png'
 import Slide from '../../components/Slide'
+import projectImage1 from '../../assets/TO DO.png'
+import projectImage2 from '../../assets/Admin.png'
+import projectImage3 from '../../assets/Ai.png'
 
 const Projects = () => {
 
@@ -9,20 +11,20 @@ const Projects = () => {
         {
             title: 'To Do List App',
             proImage: projectImage1,
-            details: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sed ullam earum magnam perferendis labore accusantium adipisci, neque dolorem rem doloribus sapiente officiis quo, nesciunt laudantium ipsum vitae excepturi est? ',
-            codeUsed: ['React', 'Tailwind']
+            details: 'A real time To Do List App that can be used to mangage daily activities. It can be use to add task and mark task complete',
+            codeUsed: 'React - Tailwind CSS - Javascript'
         },
         {
-            title: 'To Do List App',
-            proImage: projectImage1,
-            details: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sed ullam earum magnam perferendis labore accusantium adipisci, neque dolorem rem doloribus sapiente officiis quo, nesciunt laudantium ipsum vitae excepturi est? ',
-            codeUsed: ['React', 'Tailwind']
+            title: 'Admin Dashboard',
+            proImage: projectImage2,
+            details: 'A glance at the dashboard provides an instant snapshot of ongoing projects, milestones, and critical metrics. Administrators can track progress, identify bottlenecks, and ensure timely project delivery.',
+            codeUsed: 'React - Tailwind CSS - Figma - Framer Motion'
         },
         {
-            title: 'To Do List App',
-            proImage: projectImage1,
-            details: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sed ullam earum magnam perferendis labore accusantium adipisci, neque dolorem rem doloribus sapiente officiis quo, nesciunt laudantium ipsum vitae excepturi est? ',
-            codeUsed: ['React', 'Tailwind']
+            title: 'Ai Article Summarizer',
+            proImage: projectImage3,
+            details: 'A tool that employs cutting-edge artificial intelligence to analyze lengthy articles and condense them into concise, easily digestible summaries.',
+            codeUsed: 'React - Tailwind CSS - Figma - Fetch Api - Javascript'
         },
     ]
 
@@ -50,11 +52,11 @@ const Projects = () => {
       </div>
       <div className='relative w-fit'>
         <Slide />
-      <h1 className='text-[#0AFF9D]'>React - Tailwind - Figma</h1>
+      <h1 className='text-[#0AFF9D]'>{projectDetail.codeUsed}</h1>
       </div>
       <div className='relative'>
         <Slide />
-      <h1 className='w-full'>A real time To Do List App that can be used to mangage daily activities. It can be use to add task and mark task complete</h1>
+      <h1 className='w-full'>{projectDetail.details}</h1>
       </div>
         </motion.div>)}
     </div>
