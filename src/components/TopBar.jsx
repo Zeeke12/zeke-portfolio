@@ -5,7 +5,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 const TopBar = () => {
   return (
-    <div className='text-white py-10 bg-black px-5 min-w-screen flex flex-row justify-between'>
+    <div className='text-white py-10  px-5 min-w-screen flex flex-row justify-between' 
+    style={{ backdropFilter: 'blur(10px)' }}>
         <div>Zeke</div>
         <div className='flex flex-row gap-5'>
           <a href='https://github.com/Zeeke12/zeke-portfolio'><FaGithub /></a>
