@@ -2,12 +2,6 @@ import './App.css';
 import Home from './pages/Home/Home';
 import SideBar from './components/SideBar';
 import TopBar from './components/TopBar';
-import { motion } from 'framer-motion'
-import About from './pages/About/About';
-import Projects from './pages/Projects/Projects'
-import Experience from './pages/experience/Experience'
-import Contact from './pages/contact/Contact'
-import Slide from './components/Slide';
 import { TabProvider } from './components/TabContext';
 
 function App() {

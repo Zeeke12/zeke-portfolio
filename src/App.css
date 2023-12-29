@@ -1,12 +1,18 @@
-.emoji-rain {
-  animation: emojiFall 5s linear infinite;
+/* Projects.css */
+.popup-container {
+  overflow-y: auto;
 }
 
-@keyframes emojiFall {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100vh);
-  }
+.no-scroll {
+  overflow: hidden;
+}
+/* Add these styles to your existing CSS */
+.sidebar.scrolling {
+  background-color: rgba(17, 17, 17, 0.8); /* Adjust the background color as needed */
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+}
+
+.nav-link {
+  cursor: pointer;
 }
