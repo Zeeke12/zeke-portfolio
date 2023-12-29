@@ -9,8 +9,8 @@ import { IoMdExit } from "react-icons/io";
 const ProjectDetails = ({ selectedItem }) => {
 
   return (
-    <div className='flex flex-col h-screen rounded-2xl w-[520px] relative bg-[#111111]'>
-            <img src={projectDetails[selectedItem -1].proImage} className='h-[250px] w-full object-contain' />
+    <div className='flex flex-col h-fit rounded-2xl w-[520px] relative bg-[#111111]'>
+            <img src={projectDetails[selectedItem -1].proImage} alt={projectDetails[selectedItem - 1].title} className='h-[250px] w-full object-contain' />
             <div className='flex flex-col relative gap-5 px-5 py-5'>
               <div>
             <h3 className='text-2xl font-bold'>{projectDetails[selectedItem - 1].title}</h3>

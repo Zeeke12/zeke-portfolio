@@ -1,9 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import About from '../About/About'
-import Projects from '../Projects/Projects'
-import Experience from '../experience/Experience'
-import Contact from '../contact/Contact'
 import Slide from '../../components/Slide'
 import MouseTrailAnimation from '../../components/Animation'
 
@@ -11,7 +7,7 @@ const Home = () => {
 
   return (
     <div className='row-[2_/_span_1] col-span-[2_/_span_3] px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] w-full flex flex-col gap-10'>
-    <div id='home' className='relative flex flex-col justify-center gap-5 pl-1 h-screen'>
+    <section id='home' className='relative flex flex-col justify-center gap-5 pl-1 h-screen'>
       <MouseTrailAnimation />
       <div className='relative w-fit'>
     <Slide />
@@ -30,22 +26,11 @@ const Home = () => {
       <div className='relative w-fit'>
       <Slide />
       <motion.div initial={{ opacity: 0}} whileInView={{y: -10,opacity: 1}} transition={{type:'spring',duration: 2, delay: 1}} >
-      <a href='' className='border border-[#0AFF9D] px-4 py-2 hover:text-[#0AFF9D] bg-[#0AFF9D] hover:bg-[#111111]  text-black transition-all duration-500'>Contact Me</a>
+      <a href='#contact' className='border border-[#0AFF9D] px-4 py-2 hover:text-[#0AFF9D] bg-[#0AFF9D] hover:bg-[#111111]  text-black transition-all duration-500'>Contact Me</a>
       </motion.div>
       </div>
-      </div>
-      <div id='about'>
-      <About />
-      </div>
-      <div id='projects'>
-      <Projects />
-      </div>
-      <div id='experience'>
-      <Experience />
-      </div>
-      <div id='contact'>
-      <Contact />
-      </div>
+      </section>
+      
       </div>      
   )
 }

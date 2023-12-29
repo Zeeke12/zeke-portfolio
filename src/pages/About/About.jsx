@@ -61,12 +61,6 @@ const About = () => {
     },
 
   ]
-
-  const variants = {
-    initial: { x: 0 },
-    whileOnView: { width: '' },
-    exit: { width: '' },
- };
   return (
     <div className='text-white '>
       <div className='flex flex-row items-center  relative pl-1'>
