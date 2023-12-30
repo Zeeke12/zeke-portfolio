@@ -2,10 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Slide from '../../components/Slide'
 
-const Contact = () => {
+const Contact = ( ) => {
 
   return (
-    <div className='flex relative flex-col py-20 h-screen justify-center align-middle text-white text-center gap-10 '>
+    <div className='flex relative flex-col py-20 h-screen justify-center align-middle text-white text-center gap-10'>
               <div className='relative'>
             <Slide />
 <motion.h1 initial={{ opacity: 0}} whileInView={{ y: -10,opacity: 1}} transition={{type:'spring',duration: 1, delay: 1}} className='text-white font-mono text-4xl md:text-8xl font-extrabold z-10'>Contact<span className='text-[#0AFF9D]'>.</span></motion.h1>        

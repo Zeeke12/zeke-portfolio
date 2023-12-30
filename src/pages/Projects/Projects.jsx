@@ -41,7 +41,7 @@ const Projects = () => {
         {projectDetails.map((projectDetail, index) => <motion.div  initial={{ y:20 }} whileInView={{ y: 0,opacity: 1}} transition={{type:'tween',duration: 1, delay: 1}} key={index} className='w-full md:w-[400px] my-5 text-white flex flex-col gap-3' onClick={() => handleClick(projectDetail.id)}>
             <div className='h-[150px] relative w-full md:w-[400px] bg-[#232323] flex flex-col justify-end'>
                 <Slide />
-                <motion.img src={projectDetail.proImage} alt={projectDetail.title} className=' w-full h-full object-cover hover:scale-110'/>
+                <motion.img src={projectDetail.proImage} alt={projectDetail.title} className=' w-full h-full object-cover'/>
             </div>
             <div className='flex flex-row items-center  relative '>
             <div className='relative w-max'>
