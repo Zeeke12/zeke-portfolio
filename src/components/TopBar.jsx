@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import ResumeButton from './ResumeButton';
 
 
 const TopBar = () => {
@@ -14,7 +15,7 @@ const TopBar = () => {
           <motion.a initial={{ y:-200}} animate={{ y: 0}} transition={{type: 'spring', duration: 1, delay: 1.6}}  href='https://github.com/Zeeke12/zeke-portfolio'><FaLinkedin /></motion.a >
         </div>
         <motion.div initial={{ y:-200}} animate={{ y: 0}} transition={{type: 'spring', duration: 1, delay: 1.9}}>
-          <a href='#nnc' className='border border-[#0AFF9D] px-4 py-2 text-[#0AFF9D] hover:bg-[#0AFF9D] hover:text-black transition-all duration-500'>My Resume</a>
+            <ResumeButton />
         </motion.div>
         </div>
   )
